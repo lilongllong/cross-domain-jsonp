@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsonp-jquery</title>
+    <script src="./jquery-3.0.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+<script src="./jsonp.js" charset="utf-8"></script>
+<script type="text/javascript">
+    //invoke("http://127.0.0.1:8080/jsonp/sum", {a: 10, b: 20});
+    invokeGetJSON("http://127.0.0.1:8080/jsonpp/sum", {a: 10, b: 20}, callback);
+    //invokeGetJSON("http://127.0.0.1:8080/jsonp/sum", {a: 10, b: 20}, callback);
+    //invokeGetJSON("http://127.0.0.1:8080/jsonpp/sum", {a: 10, b: 20}, callback);
+</script>
+</body>
+</html>
